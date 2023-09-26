@@ -1,0 +1,61 @@
+<!Leia os nomes e os pesos de duas pessoas e, 
+em seguida, imprima os dados da pessoa mais obesa.>
+
+<!DOCTYPE>
+<html lang="pt-br">
+
+    <head>
+
+        <meta name="viewport" content="widith=device=widith, initial-scaled=1.0">
+        <title> Quem é o Mais Obeso </title>
+
+    </head>
+
+    <body>
+
+        <h2> O mais Obeso é: </h2>
+        <hr>
+        <div id = "obeso"> </div>
+
+        <Script>
+        
+            let nome = prompt("Digite o nome da pessoa:")
+            let peso = Number(prompt("Agora Digite o peso, somente o valor em numeros "))
+
+            let nome2 = prompt("Digite o nome da Segunda pessoa:")
+            let peso2 = Number(prompt("Agora Digite o peso, somente o valor em numeros "))
+            let resultado ;
+
+            if (peso > peso2)
+            
+            {
+               
+                resultado = nome+ ", pesa: "  +peso+ "kg"
+            
+            }
+
+            else if (peso2 > peso)
+           
+            {
+                
+                resultado =nome2+ ", pesa: "+peso2+"kg."
+            
+            }
+            else
+           
+            {
+
+                resultado = nome + " e " + nome2 +" Ambos pesam: "+peso+ "kg"     
+           
+            }
+            
+            document.getElementById("obeso").innerHTML=resultado
+
+
+
+        </Script>
+
+
+    </body>
+
+</html>

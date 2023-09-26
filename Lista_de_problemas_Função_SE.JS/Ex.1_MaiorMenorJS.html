@@ -1,0 +1,61 @@
+<!Leia dois números e verifique: qual é o menor e qual é o maior>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta name="viewport" content="widith=device=widith, initial-scale=1.0">
+        <title> Maior e Menor </title>
+    
+    </head>
+
+    <body>
+
+       <h2> Identificando o numero Maior e Menor. </h2>
+       <hr>
+        <div id="MaiorMenor"></div>
+
+        
+
+        <script>
+
+            let numero1 = Number(prompt("Digite Um Numero"))
+            let numero2 = Number(prompt("Digite outro Numero")) 
+            let resultado;
+
+            if (numero1 > numero2)
+
+            {
+
+                resultado ="O numero "+numero1+" que você digitou, é maior que o numero "+numero2+" que você digitou."
+            
+            }
+            
+            else if (numero2 > numero1)
+            
+            {
+
+                resultado ="O numero "+numero2+" que você digitou, é maior que o numero "+numero1+" que você digitou."
+
+            
+            }
+
+            else 
+            
+            {
+           
+                resultado = "Os dois números que você digitou são iguais.";
+            
+            }
+
+
+
+            document.getElementById("MaiorMenor").innerHTML = resultado;        
+
+        </script>
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,61 @@
+<!Leia os anos de nascimento de duas pessoas e depois 
+calcule suas idades. Em seguida, imprima o nome e a idade 
+de cada uma delas e indique qual delas é a mais nova.>
+<!doctype.html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widith=device=widith, initial-scaled=1.0">
+        <title> nome e Idade </title>
+
+    </head>
+
+    <body>
+
+       <div id = "NomeIdade"> </div>
+
+        <Script>
+        
+            let nome = prompt("Digite o nome da pessoa:")
+            let ano = Number(prompt("Agora Digite o Ano de nascimento desta pessoa."))
+
+            let nome2 = prompt("Digite o nome da Segunda pessoa:")
+            let ano2 = Number(prompt("Agora Digite o Ano de nascimento desta pessoa. "))
+            let idade = (2023 - ano)
+            let idade2 = (2023 - ano2)
+            let resultado ;
+
+            if (idade > idade2)
+            
+            {
+               
+                resultado = nome2+ ", é o mais novo com ,"  +idade2+ " anos."
+            
+            }
+
+            else if (idade2 > idade)
+           
+            {
+                resultado = nome+ " é o mais novo com ,"  +idade+ " anos."
+            
+            }
+            else
+           
+            {
+
+                resultado = nome + " é " + nome2 +" Ambos Tem a mesma idade: "+ano+ " anos."     
+           
+            }
+            
+            document.getElementById("NomeIdade").innerHTML= nome+"."+"<br>"+ idade+ "anos"+"<br>"+"<hr>"+nome2+"."+"<br>"+ idade2+ "anos"+"<br>"+"<hr>"+resultado;
+
+
+
+        </Script>
+
+
+    </body>
+
+</html>
+
+

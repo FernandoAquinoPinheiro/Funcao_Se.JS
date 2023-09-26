@@ -1,0 +1,48 @@
+<!Leia dois valores e depois mostre a diferença entre eles.>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widith=device=widith, initial-scaled=1.0">
+        <title> Numeros Diferentes </title>
+
+    </head>
+
+    <body>
+
+       <div id = "diferente"> </div>
+
+        <Script>
+        
+            let numero1 = Number(prompt("Digite um numero"))
+            let numero2 = Number(prompt("Digite outro numero"))
+          
+    
+            let resultado =""; 
+
+
+            if (numero1 != numero2)
+             
+            {
+               
+                resultado = numero1+ " é diferente de "+numero2
+            
+            }
+
+            else 
+           
+            {
+                resultado = numero1+ " é igual "+numero2
+            }
+          
+            
+            document.getElementById("diferente").innerHTML= resultado
+
+
+
+        </Script>
+
+
+    </body>
+
+</html>

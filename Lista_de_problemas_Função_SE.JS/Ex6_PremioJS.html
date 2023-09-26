@@ -1,0 +1,48 @@
+<!Uma empresa dá um prêmio aos funcionários que cumprem ou
+ ultrapassam determinado valor de vendas de produtos.
+Para cada funcionário, foi estabelecido um valor a ser
+alcançado. Faça um algoritmo para ler o valor fixado e o
+valor de vendas de um funcionário. Depois, imprima a
+mensagem "Ganhou!" (caso o funcionário tenha conseguido
+ o prêmio) e "Não ganhou!" (caso ele não tenha conquistado).> 
+
+ <html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widith=device=widith, initial-scaled=1.0">
+        <title> Cumprindo a Meta </title>
+
+    </head>
+
+    <body>
+
+       <div id = "Meta"> </div>
+
+        <Script>
+        
+            let ValorVenda =Number(prompt("Digite a venda total de um funcionario"))
+            let ValorMeta =3000
+            let retorno;
+
+            if (ValorVenda >= ValorMeta)
+            {
+                retorno = "O funcionario bateu a meta, ele Ganhou o Premio"
+            }
+            else
+            {
+                retorno = "O funcionario não bateu a meta, não Ganhou o Premio"
+            }
+           
+          
+            
+            document.getElementById("Meta").innerHTML= retorno
+
+
+
+        </Script>
+
+
+    </body>
+
+</html>

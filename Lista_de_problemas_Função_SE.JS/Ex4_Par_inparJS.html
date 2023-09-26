@@ -1,0 +1,47 @@
+<!eia um número e verifique se ele é par ou ímpar. Observação: para o número ser par,  o resto de sua divisão por dois deverá ser igual a zero.  >
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widith=device=widith, initial-scaled=1.0">
+        <title> Par e Impar </title>
+
+    </head>
+
+    <body>
+
+       <div id = "ImparPar"> </div>
+
+        <Script>
+        
+       
+            let numero = Number(prompt("Digite um numero"))
+    
+            let ImparPar;
+
+            let resultado = numero % 2
+
+            if (resultado == 0)
+            
+            {
+               
+                imparPar = numero+ " é um numero, Par"
+            
+            }
+
+            else 
+            {
+                imparPar =numero+ " é um numero, impar"
+            }
+          
+            
+            document.getElementById("ImparPar").innerHTML= imparPar
+
+
+
+        </Script>
+
+
+    </body>
+
+</html>
